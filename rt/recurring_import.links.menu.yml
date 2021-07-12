@@ -1,6 +1,0 @@
-recurring_import.admin:
-  title: 'Recurring import tool'
-  description: 'Update school data by importing CSV file.' 
-  parent: system.admin
-  route_name: recurring_import.content
-  weight: 10

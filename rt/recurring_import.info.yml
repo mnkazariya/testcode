@@ -1,6 +1,0 @@
-name: School Recurring Import 
-description: Update School's Data
-core_version_requirement: ^8 || ^9
-version: 0.1-dev
-package: Recurring Data
-type: module
