@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_toolbar().
+ */
+
+// Drupal Admin default "edit" link at top right corner. Removed.  
+function recurring_import_toolbar_alter(&$items) {
+  $user = \Drupal::currentUser();
+  if(!empty($user)){
+    $userRoles = $user->getRoles();
+    if(in_array('administrator', $userRoles) ) {
+      unset($items['contextual']);
+    }
+  }
+}
+
+?>
